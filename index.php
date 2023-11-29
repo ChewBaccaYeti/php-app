@@ -59,9 +59,53 @@
 
     <?php
     echo "Main script <br>";
-    include "include.php";
-    require "require.php";
+    include "./child/include.php";
+    require "./child/require.php";
     echo "Main script <br>";
+    ?>
+
+    <?php
+    $user = "Wazowski";
+    if (isset($user))
+        echo "Wazowski is here";
+    else
+        echo "Wazowski was compromised";
+    ?>
+
+    <?php
+    $user = "Wazowski";
+    echo gettype($user);
+    ?>
+    <br>
+    <?php
+    $num = 963874;
+    echo gettype($num);
+    ?>
+    <br>
+    <?php
+    $float = 96.3874; // double
+    echo gettype($float);
+    ?>
+    <br>
+    <?php
+    if (is_int(1.25))
+        echo "integer";
+    else
+        echo "float";
+    ?>
+
+    <br>
+
+    <?php
+    echo
+    include "./child/equal-type.php";
+    ?>
+
+    <br>
+
+    <?php
+    echo
+    require "./class.php";
     ?>
 
 </body>
