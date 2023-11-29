@@ -48,11 +48,11 @@
     <?php
     if (mt_rand(0, 1)) {
     ?>
-        <div style="color: green">Green text</div>
+    <div style="color: green">Green text</div>
     <?php
     } else {
     ?>
-        <div style="color: red">Red text</div>
+    <div style="color: red">Red text</div>
     <?php
     }
     ?>
@@ -105,7 +105,7 @@
 
     <?php
     echo
-    require "./class.php";
+    require "./newClasses.php";
     ?>
 
 </body>
